@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Page - HospitalManagementSystem</title>
+  <link href="static/img/n.jpg" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- <link rel="icon" type="image/x-icon" href="/AdvanceDBMS MiniProject LU/Adv DBMS Mini Project/Update with DB/DBMS_MiniProject/static/menuLogo.png"> -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+
+<body>
+  <center>
+    <!-- <h1>Hospital Management System</h1> -->
+  </center>
+  <!-- <div class="header">
+    <div class="flex">
+      <div></div>
+      <div></div>
+    </div>
+  </div> -->
+
+  <!-- top bar starts -->
+  <div style="background-color: rgb(9, 255, 243); padding: 0.5%;  color: white; font-weight: bold;" id="topbarmenu"
+    class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+      <div class="align-items-center d-none d-md-flex">
+        <span><img style="width: 25px; height: 25px; border-radius: 50px; " src="/static/img/icon/time.png" alt=""></span><span>
+          &nbsp; Monday - Saturday, 7AM to 11PM </span>
+      </div>
+      <div class="d-flex align-items-center">
+        <span><img style="width: 15px; height: 25px; border-radius: 5px; " src="/static/img/icon/call.png" alt=""></span><span>
+          &nbsp; Call us now +91 6307382811 </span>
+      </div>
+    </div>
+  </div>
+  <!-- top bar ends -->
+
+  <!----------------- Navigation Starts -------------------->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div style="width: 100%;" class="container-fluid">
+      <a class="navbar-brand" href="#"><img width="61%" height="41%" src="/static/img/menuLogo.png" alt="Loading..."></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div style=" width: 70%;" class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-0 mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#ABOUT">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/doctors">Doctors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#departments">Departments</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/patients">Patients</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              PatientBooking
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/signup">SignUp</a></li>
+              <li><a class="dropdown-item" href="/signin">SignIn</a></li>
+
+            </ul>
+          </li>
+          <!-- <li class="nav-item">
+                  <a class="nav-link"><button></button></a>
+                </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!------------------ Navigation Ends -------------------->
+
+  <!-- <h1>I am Home :)</h1> -->
+
+  <!-- YOU TUBE Video -->
+  <div style="display: none;" id="YOUTUBE" class="youtube">
+    <button onclick="closeYoutube();" style="float: right; ">X</button>
+    <iframe  width="100%" height="415" src="https://www.youtube.com/embed/DEivXTFNgp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <!-- YOU TUBE Video -->
+
+  <!------------------- Carousal Starts ----------------------->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img style="width: 1920px; height: 501px;  " src="/static/img/carousalImg/slide-1.jpg" class="d-block w-100"
+          alt="Loading...">
+        <div class="carousel-caption d-none d-md-block">
+          <div style="padding: 1%; background:white ; opacity: 0.91; ">
+            <h1 style="color: blue;"><b><u>NEXTGEN</u></b></h1>
+            <h4 style="color: aquamarine;"><b>HEALTHCARE SOLUTION</b></h4>
+            <br>
+            <p style="color: black;">The Next Generation step towards advanced treatment with advance technology and
+              instruments.</p>
+          </div>
+          <br>
+
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img style="width: 1920px; height: 501px;  " src="/static/img/carousalImg/slide-2.jpg" class="d-block w-100"
+          alt="Loading...">
+        <div class="carousel-caption d-none d-md-block">
+          <div style="padding: 1%; background:white ;  opacity: 0.91; ">
+            <h1 style="color: blue;"><b><u>NEXTGEN</u></b></h1>
+            <h4 style="color: aquamarine;"><b>HEALTHCARE SOLUTION</b></h4>
+            <br>
+            <p style="color: black;">The Next Generation step towards advanced treatment with advance technology and
+              instruments..</p>
+          </div>
+          <br>
+
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img style="width: 1920px; height: 501px;  " src="/static/img/carousalImg/slide-3.jpg" class="d-block w-100"
+          alt="Loading...">
+        <div class="carousel-caption d-none d-md-block">
+          <div style="padding: 1%; background:white ;  opacity: 0.91; ">
+            <h1 style="color: blue;"><b><u>NEXTGEN</u></b></h1>
+            <h4 style="color: aquamarine;"><b>HEALTHCARE SOLUTION</b></h4>
+            <br>
+            <p style="color: black;">The Next Generation step towards advanced treatment with advance technology and
+              instruments.</p>
+          </div>
+          <br>
+
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!------------------- Carousal Starts ----------------------->
+
+  <!-- About Us starts -->
+  <div id="ABOUT" class="container">
+    <br><br>
+    <div class="about">
+      <h3 style="color: rgb(161, 243, 10); font-weight:bold; "><u>About Us -</u></h3>
+      <div class="flex">
+        <div class="left">
+          <br>
+          <h2>"As we’ve grown over the last few years, 
+            NextGen Healthcare has been a trusted advisor-helping us before change arrives, 
+            helping us anticipate the market. "</h2>
+        </div>
+        <div class="right">
+          <h5>Our clinical care solutions include EHR, population health, and mobile solutions, and consulting services. 
+            They help practices optimize their strategy for delivering high-quality care.</h5>
+          <p>NextGen Healthcare has been on a mission to empower ambulatory practices with innovative health IT
+            solutions. <br>
+            We continually strive for better—helping clients achieve clinical, operational, and financial success. <br>
+            We proudly support the providers of ambulatory care and the communities they serve. <br>
+            The best is yet to come, Here’s a snapshot of what we’ve accomplished so far.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="innerAbout">
+      <div class="flex">
+        <div>
+          <img src="/static/img/icon/whoWeAre.png" alt="Loading...">
+          <br>
+          <h3>WHO WE ARE</h3>
+          <p>We are a leading healthcare solutions provider on a mission 
+            to improve the lives of those who practice medicine and their patients.</p>
+        </div>
+        <div>
+          <img src="/static/img/icon/whoWeHelp.png" alt="Loading...">
+          <br>
+          <h3>WHO WE HELP</h3>
+          <p>We support providers of ambulatory care and the communities they serve.</p>
+        </div>
+        <div>
+          <img src="/static/img/icon/whatWeOffer.png" alt="Loading...">
+          <br>
+          <h3>WHAT WE OFFER</h3>
+          <p>Our comprehensive, integrated technology and services
+             platform supports ambulatory and specialty practices of all sizes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About Us Ends -->
+
+<!-- ======= Cta Emergengy Section ======= -->
+<section id="cta" class="cta">
+  <div class="container" data-aos="zoom-in">
+
+    <div class="text-center">
+      <h3><b>In an emergency? Need help now?</b></h3>
+      <p>All around the world, acutely ill and injured people seek care every day.  Frontline providers manage children and adults with medical, surgical and obstetric emergencies, including injuries and infections, heart attacks and strokes, asthma and acute complications of pregnancy.  Prioritising an integrated approach to early recognition and resuscitation reduces the impact of all of these conditions.</p>
+      <br>
+      <a href="#"><b>Make an Appointment</b></a>
+      <br><br>
+    </div>
+
+  </div>
+</section>
+<!-- End Cta Emergency Section -->
+
+
+
+ <!-- ======= Departments Section ======= -->
+ <section id="departments" class="departments">
+  <br><br>
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <center><h2><b><u>Departments</u></b></h2></center>
+      <p>We have 4 specialised departments: </p>
+      <ol>
+        <li>Cardiology</li>
+        <li>Neurology</li>
+        <li>Hepatology</li>
+        <li>Pediatrics</li>
+      </ol>
+    </div>
+
+    <div class="row" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-lg-4 mb-5 mb-lg-0">
+        <ul class="nav nav-tabs flex-column">
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+              <h4><b>Cardiology</b></h4>
+              <p>No beauty shines brighter than a healthy heart.</p>
+            </a>
+          </li>
+          <li class="nav-item mt-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+              <h4><b>Neurology</b></h4>
+              <p>The brain is the organ of destiny.</p>
+            </a>
+          </li>
+          <li class="nav-item mt-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+              <h4><b>Hepatology</b></h4>
+              <p>Is life worth living? It all depends on the liver.</p>
+            </a>
+          </li>
+          <li class="nav-item mt-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+              <h4><b>Pediatrics</b></h4>
+              <p>Getting a child to healthily laugh is one of the most rewarding things.</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-8">
+        <div class="tab-content">
+          <div class="tab-pane active show" id="tab-1">
+            <h3>Cardiology</h3>
+            <p class="fst-italic">When the heart is at ease, the body is healthy.</p>
+            <img width="25%" height="25%" src="static/img/departments-1.jpg" alt="" class="img-fluid">
+            <p>The Cardiology department is an integrated healthcare centre with a highly experienced, qualified, and dedicated team of heart surgeons, cardiologists, and radiologists who work together to provide comprehensive care to patients suffering from various heart diseases.</p>
+          </div>
+          <div class="tab-pane" id="tab-2">
+            <h3>Neurology</h3>
+            <p class="fst-italic">The key to a healthy life is a healthy mind.</p>
+            <img width="25%" height="25%" src="static/img/departments-2.jpg" alt="" class="img-fluid">
+            <p>Our department of neurology is an integrated institute with a team of specialised doctors supported by the latest technology which aims to provide comprehensive and multidisciplinary care for disorders of the brain and spine.
+The institute has a team of highly qualified neurologists, neurosurgeons, neuro-interventionists and neuro-anaesthetists that work to ensure the proper treatment and recovery of patients. The institute has dedicated centres for brain tumours, spinal disorders, stroke, epilepsy, movement disorders and headache.</p>
+          </div>
+          <div class="tab-pane" id="tab-3">
+            <h3>Hepatology</h3>
+            <p class="fst-italic">Keep your Liver Healthy!!</p>
+            <img width="25%" height="25%" src="static/img/departments-3.jpg" alt="" class="img-fluid">
+            <p>Our Hepatology institute aims at providing the best treatment to patients with the worst cases of diseases involving their digestive, liver and pancreato-biliary tracts. Our surgeons are specially skilled in Minimally Invasive Gastric Surgeries that helps in quick recovery of patients.
+The institute consists of the most advanced facilities and carries out almost all major endoscopy and radiology assisted procedures for gastrointestinal, liver and bilio-pancreatic disorders. </p>
+          </div>
+          <div class="tab-pane" id="tab-4">
+            <h3>Pediatrics</h3>
+            <p class="fst-italic">Your child is our priority.</p>
+            <img width="25%" height="25%" src="static/img/departments-4.jpg" alt="" class="img-fluid">
+            <p>The department of Paediatrics is an integrated healthcare division, which aims to offer a caring and compassionate environment for your child, including paediatric facilities and specialised critical care. Our team uses the most advanced technology and latest research to deliver the most effective, personalized treatment for children. The Institute is a notable destination for all types of problems, such as- congenital heart defects, chronic kidney disease, sickle cell anaemia and type 1 diabetes in children.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- End Departments Section -->
+
+
+  <div  class="afterAbout">
+    <a href="#"><img onclick="youtube();" src="/static/img/bg1.png" alt=""></a>
+  </div>
+
+<!-- --------------------------------------------------------------------------- -->
+
+
+
+<!-- Doctors start -->
+
+<!-- Doctors ends -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<script>
+   function youtube(){
+
+    document.getElementById('YOUTUBE').style.display="block";
+   }
+   function closeYoutube(){
+
+    document.getElementById('YOUTUBE').style.display="none";
+   }
+</script>
